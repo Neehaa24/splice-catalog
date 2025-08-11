@@ -8,6 +8,7 @@ import { OntologyRelations } from './entities/OntologyRelation';
 import { OntologyAliases } from './entities/OntologyAlias';
 import { ItemClassification } from './entities/ItemClassification';
 import { ValidationResults } from './entities/ValidationResults';
+import { Keyword } from './entities/Keyword';
 // import { CreateSPLICECatalog1699653593228 } from './migrations/1699653593228-CreateSPLICECatalog';
 import { CreateSLCToolsCatalog1708095482368 } from './migrations/1708095482368-CreateSLCToolsCatalog';
 import { CreateDatasetCatalog1708977188986 } from './migrations/1708977188986-CreateDatasetCatalog';
@@ -52,6 +53,7 @@ export const AppDataSource = new DataSource({
     OntologyAliases,
     ItemClassification,
     ValidationResults,
+    Keyword,
   ],
   synchronize: false,
   subscribers: [],
